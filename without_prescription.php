@@ -168,7 +168,7 @@
                 //function saveimage($name,$image)
             {
                 $con=@mysql_connect("localhost","username","password");
-                mysql_select_db("u797227666_sujit",$con);
+                mysql_select_db("db",$con);
                 $qry="insert into users (Name,Contact_No,Email,Address,Medicine_1,Strength_1,Quantity_1,Medicine_2,Strength_2,Quantity_2,Medicine_3,Strength_3,Quantity_3,Medicine_4,Strength_4,Quantity_4,Medicine_5,Strength_5,Quantity_5) values ('$FirstName','$phone','$email','$address','$medicine1','$strength1','$quantity1','$medicine2','$strength2','$quantity2','$medicine3','$strength3','$quantity3','$medicine4','$strength4','$quantity4','$medicine5','$strength5','$quantity5')";
                 //$qry="insert into images (name,image) values ('$name','$image')";
                 $result=mysql_query($qry,$con);

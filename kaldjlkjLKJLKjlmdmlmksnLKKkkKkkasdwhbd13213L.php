@@ -44,8 +44,8 @@
 <body class="image">
 
 <?php
-$connection = @mysql_connect("localhost", "u797227666_sujit", "9439532222");
-$db = mysql_select_db("u797227666_sujit", $connection);
+$connection = @mysql_connect("localhost", "root", "pass");
+$db = mysql_select_db("db", $connection);
 $query = mysql_query("select count(1) FROM users", $connection);
 while ($row = mysql_fetch_array($query)) {
 

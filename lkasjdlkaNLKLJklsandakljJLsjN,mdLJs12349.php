@@ -44,8 +44,8 @@
 <body class="image">
 
 <?php
-$connection = @mysql_connect("localhost", "u797227666_sujit", "9439532222");
-$db = mysql_select_db("u797227666_sujit", $connection);
+$connection = @mysql_connect("localhost", "root", "pass");
+$db = mysql_select_db("db", $connection);
 $query = mysql_query("select count(1) FROM prescription_upload", $connection);
 while ($row = mysql_fetch_array($query)) {
 
@@ -59,8 +59,8 @@ while ($row = mysql_fetch_array($query)) {
 ?>
 
 <?php
-$con=@mysql_connect("localhost","u797227666_sujit","9439532222");
-mysql_select_db("u797227666_sujit",$con);
+$con=@mysql_connect("localhost","root","pass");
+mysql_select_db("db",$con);
 $qry="select * from prescription_upload ORDER BY id DESC";//$qry="select * from images";images
 $result=mysql_query($qry,$con);
 while($row = mysql_fetch_array($result))
